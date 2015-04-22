@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Joshua's T-Do List #2</title>
@@ -6,7 +6,6 @@
 </head>
 <body>
 	<div class="wrap">  
-	
-	</div>
+</div>
 </body>
 </html>
