@@ -1,2 +1,24 @@
 @import "css/reset.css";
 @import "css/normalize.css";
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+	font: normal 14px 'Open Sans', Arial, sans-serif;
+	color: #999;
+	background: #f1f1f1;
+}
+
+.wrap {
+	width: 500px;
+	margin: 0 auto;
+}
+
+.task-list {
+	width: 88%;
+	min-height: 300px;
+	background: #fff;
+	box-shadow: 2px 2px 0px #ddd;
+	margin-top: 40px;
+	padding: 22px 6%;
+}

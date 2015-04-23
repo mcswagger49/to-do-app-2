@@ -8,7 +8,7 @@
 	<div class="wrap">  
 		<div class="task-list">
 			<ul>
-				<?php require("include/connect.php"); ?>
+				<?php require("includes/connect.php"); ?>
 			</ul>		
 		</div>
 	<form class="add-new-task" autocomplete="off">
