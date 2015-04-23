@@ -3,6 +3,9 @@
 <head>
 	<title>Joshua's T-Do List #2</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+
 </head>
 <body>
 	<div class="wrap">  
