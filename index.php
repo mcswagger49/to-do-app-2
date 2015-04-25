@@ -2,12 +2,21 @@
 <html>
 <head>
 	<title>Joshua's T-Do List #2</title>
+		<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  	<link rel="stylesheet"  media="screen and (min-width: 0px)" href="css/small.css">
+    <link rel="stylesheet"  media="screen and (min-width: 1000px)" href="css/medium.css">
+    <link rel="stylesheet"  media="screen and (min-width: 1400px)" href="css/large.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
-
 </head>
 <body>
+<a class="btn btn-primary" href="login.php">Login</a>
+<div class="text-right small-4 medium-2 columns">
+<a class="btn btn-primary" href="logout-user.php">Logout</a>
+</div>
+<a class="btn btn-primary" href="register.php">Register</a>
 	<div class="wrap">  
 		<div class="task-list">
 			<ul>
@@ -32,7 +41,7 @@
 			</ul>		
 		</div>
 	<form class="add-new-task" autocomplete="off">
-		<input type="text" name="new-task" placeholder="Add new item..."/>
+		<input type="text"align="center" name="new-task" placeholder="Add new item..."/>
 	</form>
 	</div>
 </body>
@@ -65,4 +74,15 @@
 	  });
 	});
 	</script>
+<?php
+require_once(__DIR__ . "/php/controller/login-verify.php");
+require_once(__DIR__ . "/php/view/header.php");
+if(authenticateUser()){
+require_once(__DIR__ . "/php/view/navigation.php");
+}
+require_once(__DIR__ . "/php/controller/create-db.php");
+require_once(__DIR__ . "/php/view/footer.php");
+require_once(__DIR__ . "/php/controller/read-posts.php");
+?>
+
 </html>
